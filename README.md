@@ -1,4 +1,4 @@
-![Cover Photo](https://github.com/Donald-K-Lee/Donald-K-Lee/blob/master/coverimage.jpeg)
+![Video](https://media.giphy.com/media/SXl1JqdpPy0lBT27pl/giphy.gif)
 ### Hi there 👋, I'm Donald,
 ### a high school student who enjoys coding! Currently seeking job shadows and/or volunteering opportunities!  
 
