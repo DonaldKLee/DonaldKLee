@@ -4,7 +4,7 @@
     <h1>Hi there 👋, I'm Donald! </h1>
 </p>
 
-### a high school student who enjoys coding! Currently seeking job shadows and/or volunteering opportunities!  
+### I'm a high school student who enjoys coding! Currently seeking job shadows and/or volunteering opportunities!  
 
 #### 👨🏻‍💻Self taught coder!  
 #### 🌐 Check out my [links](https://donald-k-lee.github.io/Links.html)! 
