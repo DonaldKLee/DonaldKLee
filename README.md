@@ -1,6 +1,6 @@
 <p align="center">
-  <img width="1000vw" height="auto" src="https://github.com/Donald-K-Lee/Donald-K-Lee/blob/master/Intro.gif">
   <img width="1000vw" height="auto" src="https://github.com/Donald-K-Lee/Donald-K-Lee/blob/master/coverimage.jpeg">
+   <img width="1000vw" height="auto" src="https://github.com/Donald-K-Lee/Donald-K-Lee/blob/master/Intro.gif">
 </p>
 
 ### Hi there 👋, I'm Donald,
