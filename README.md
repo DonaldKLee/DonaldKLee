@@ -5,5 +5,6 @@
  
   
 ![Donald's github stats](https://github-readme-stats.vercel.app/api?username=Donald-K-Lee)
-
-   <h3>🌐 Check out some of my <a href="https://donald-k-lee.github.io/Links.html">links</a>!</h3>
+ * 👨🏻‍💻 Currently learning Python!
+ * 🤝 Open to collaborating. 
+ * 🌐 Check out some of my <a href="https://donald-k-lee.github.io/Links.html">links</a>!
