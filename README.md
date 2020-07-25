@@ -6,5 +6,5 @@
   
 ![Donald's github stats](https://github-readme-stats.vercel.app/api?username=Donald-K-Lee)
  * 👨🏻‍💻 Currently learning Python!
- * 🤝 Open to collaborating. 
+ * 🤝 Open to collaborating! 
  * 🌐 Check out some of my <a href="https://donald-k-lee.github.io/Links.html">links</a>!
