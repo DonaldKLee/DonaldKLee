@@ -13,7 +13,7 @@
 ![Donald's github stats](https://github-readme-stats.vercel.app/api?username=Donald-K-Lee) | 🤝 Open to collaborating! 
 ------------ | -------------
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Donald-K-Lee) |  👨🏻‍💻 Currently learning Python! 
- <img height="80px" width="80px" src="https://github.com/Donald-K-Lee/Donald-K-Lee.github.io/blob/master/icons/DL%20Logo.png"> |  🌐 Check out some of my <a href="https://donald-k-lee.github.io/Links.html">links</a>!
+<img height="80px" width="80px" src="https://github.com/Donald-K-Lee/Donald-K-Lee.github.io/blob/master/icons/DL%20Logo.png"> |  🌐 Check out some of my <a href="https://donald-k-lee.github.io/Links.html">links</a>
 
 
 
