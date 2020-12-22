@@ -10,7 +10,7 @@
 ![Donald's github stats](https://github-readme-stats.vercel.app/api?username=DonaldKLee) | 🤝 Open to collaborations! 
 ------------ | -------------
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DonaldKLee&exclude_repo=github-readme-stats,My-Old-Website-2019-to-Spring-of-2020) |  👨🏻‍💻 Currently learning Python and JavaScript! 
-<img height="80px" width="80px" src="https://github.com/DonaldKLee/DonaldKLee.github.io/blob/master/icons/DL%20Logo.png"> |  🌐 Check out some of my <a href="https://donaldklee.github.io/Links.html">links</a>!
+<img height="80px" width="80px" src="https://raw.githubusercontent.com/DonaldKLee/donaldklee.github.io/main/images/DL_Logo.png"> |  🌐 Check out some of my <a href="https://donaldklee.github.io/links">links</a>!
 
 
 
