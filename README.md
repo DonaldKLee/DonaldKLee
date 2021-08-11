@@ -13,7 +13,6 @@
   "pronouns": "he/him",
   "location": "Vancouver BC",
   "languages": "HTML, CSS, JavaScript, and Python",
-  "learning": "AJAX"
 }
 ```
 
