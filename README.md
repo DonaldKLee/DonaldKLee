@@ -12,7 +12,8 @@
   "name": "Donald Lee",
   "pronouns": "he/him",
   "location": "Vancouver BC",
-  "languages": "HTML, CSS, JavaScript, and Python",
+  "languages": ["HTML", "CSS", "JavaScript", "Python"],
+  "website": "https://donaldklee.github.io/"
 }
 ```
 
