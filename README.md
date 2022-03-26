@@ -13,11 +13,11 @@
   "pronouns": "he/him",
   "location": "Vancouver BC",
   "languages": ["HTML", "CSS", "JavaScript", "Python"],
-  "website": "https://donaldklee.github.io/"
+  "website": "https://donaldlee.xyz/"
 }
 ```
 
-#### Discover more about me on my website: [https://donaldklee.github.io](https://donaldklee.github.io/?utm_source=github&utm_medium=readme&utm_campaign=DonaldKLee)
+#### Discover more about me on my website: [https://donaldlee.xyz/](https://donaldklee.github.io/?utm_source=github&utm_medium=readme&utm_campaign=DonaldKLee)
 
 
 <!--
