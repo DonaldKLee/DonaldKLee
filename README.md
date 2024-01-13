@@ -4,7 +4,7 @@
 [<img src = "https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">](https://twitter.com/HiDonaldLee)
 [<img src = "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">](https://github.com/DonaldKLee)
 
-<img width="1000vw" height="auto" src="https://github.com/DonaldKLee/Donald-K-Lee/blob/master/Intro.gif">
+<!-- <img width="1000vw" height="auto" src="https://github.com/DonaldKLee/Donald-K-Lee/blob/master/Intro.gif"> -->
 
 #### A little bit about me 👨‍💻:
 ```json
