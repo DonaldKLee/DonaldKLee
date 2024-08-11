@@ -16,7 +16,7 @@ You can connect with me on:
   "pronouns": "he/him",
   "location": "Vancouver, BC",
   "school": "UBC",
-  "major": "Combined Major in Sciences: Computer Science, Astronomy, & Earth and Environmental Sciences",
+  "major": "Combined Major in Sciences: Computer Science, Physics, & Earth and Environmental Sciences",
   "languages": ["HTML", "CSS", "JavaScript", "Python", "Java", "C", "Go", "R", "PHP"],
   "frameworks": ["React", "Node.js", "Flask", "Django", "React Native"],
   "developer_tools": ["Git", "MongoDB", "Firebase", "SQL", "NumPy", "pandas", "Matplotlib", "OpenCV"],
