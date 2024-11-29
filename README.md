@@ -26,6 +26,3 @@ You can connect with me on:
 
 #### Feel free to reach out!! :)
 #### Discover more about me on my website: [https://donaldlee.xyz/](https://donaldklee.github.io/?utm_source=github&utm_medium=readme&utm_campaign=DonaldKLee)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/donaldlee)
-
