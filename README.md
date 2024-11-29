@@ -2,7 +2,7 @@
 
 Welcome to my GitHub profile! I'm Donald, a self-taught programmer passionate about entrepreneurship and making projects that can help make lives easier!
 
-... currently building a productivity Chrome extension: [Provent](https://proventextension.com/) and working as a part-time Software Developer at UBC!
+... currently interning @ Boeing ✈️!
 
 You can connect with me on:
 
