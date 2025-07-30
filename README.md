@@ -2,7 +2,7 @@
 
 Welcome to my GitHub profile! I'm Donald, a self-taught programmer passionate about entrepreneurship and making projects that can help make lives easier!
 
-... currently interning @ Boeing ✈️!
+... currently interning @ Amazon!
 
 You can connect with me on:
 
