@@ -1,0 +1,20 @@
+{
+  "round": 1,
+  "positions": {
+    "shades": 0,
+    "tophat": 0
+  },
+  "wins": {
+    "shades": 0,
+    "tophat": 0
+  },
+  "crew": {
+    "shades": [],
+    "tophat": []
+  },
+  "last_roller": null,
+  "last_roll_day": null,
+  "players": {},
+  "recent": [],
+  "total_rolls": 0
+}
