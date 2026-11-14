@@ -82,8 +82,8 @@ def user_link(user):
 def roll_link(team, repo):
     title = quote(f"dice|roll|{team}", safe="")
     body = quote(
-        "👇 hit the green **Create** button. that's it, no typing.\n\n"
-        "- 🎲 a bot rolls for your duck and replies here in ~30 seconds\n"
+        "👇 hit the green **Create** button. that's it! No need to edit anything here, close any issues, etc!\n\n"
+        "- 🎲 a bot will roll for your duck and reply here within ~30 seconds\n"
         "- 🏁 first duck to the finish wins the round\n"
         f"- 🤝 you're on team {TEAMS[team]['name']} until the round ends",
         safe="",
