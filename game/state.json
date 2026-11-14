@@ -2,7 +2,7 @@
   "round": 1,
   "positions": {
     "shades": 5,
-    "tophat": 0
+    "tophat": 6
   },
   "wins": {
     "shades": 0,
@@ -12,9 +12,11 @@
     "shades": [
       "DonaldKLee"
     ],
-    "tophat": []
+    "tophat": [
+      "kashgarg"
+    ]
   },
-  "last_roller": "DonaldKLee",
+  "last_roller": "kashgarg",
   "last_roll_day": "2026-11-14",
   "players": {
     "DonaldKLee": {
@@ -22,10 +24,17 @@
       "rolls": 1,
       "streak": 1,
       "last_day": "2026-11-14"
+    },
+    "kashgarg": {
+      "points": 2,
+      "rolls": 1,
+      "streak": 1,
+      "last_day": "2026-11-14"
     }
   },
   "recent": [
+    "nov 14 · [@kashgarg](https://github.com/kashgarg) rolled ⚃ **4** for 🦸 cape, found some bread (+2) 🍞",
     "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades"
   ],
-  "total_rolls": 1
+  "total_rolls": 2
 }
