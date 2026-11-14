@@ -158,7 +158,7 @@ class FilesTest(unittest.TestCase):
         self.assertTrue(readme.startswith("hi\n") and readme.endswith("bye\n"))
         self.assertIn("[@ann](https://github.com/ann)", readme)
         self.assertNotIn("old", readme)
-        for name in ["board.svg", "duck.svg", "roll-shades.svg", "roll-tophat.svg", "duck-shades.svg", "duck-tophat.svg",
+        for name in [dice.board_name(json.loads(dice.STATE_PATH.read_text())), "duck.svg", "roll-shades.svg", "roll-tophat.svg", "duck-shades.svg", "duck-tophat.svg",
                      "link-portfolio.svg", "link-linkedin.svg"]:
             svg = (self.root / "game" / name).read_text(encoding="utf-8")
             self.assertTrue(svg.startswith("<svg"), name)

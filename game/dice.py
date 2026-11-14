@@ -246,10 +246,18 @@ def roll(state, team, user, repo=DEFAULT_REPO):
 
 # ---------- rendering ----------
 
+def board_name(state):
+    return f"board-{state['total_rolls']}.svg"
+
+
 def render_art(state):
     tiles = {square: (tile["icon"], tile["move"]) for square, tile in TILES.items()}
     board = board_svg(state["positions"], TEAMS, tiles, TRACK_LENGTH, "duck race board")
-    (GAME / "board.svg").write_text(board, encoding="utf-8")
+    # A new filename per roll: GitHub caches README images by URL, so a changed
+    # query string can be ignored while a brand-new path always loads fresh.
+    for old in GAME.glob("board*.svg"):
+        old.unlink()
+    (GAME / board_name(state)).write_text(board, encoding="utf-8")
     (GAME / "duck.svg").write_text(duck_front_svg(), encoding="utf-8")
     for team, info in TEAMS.items():
         (GAME / f"roll-{team}.svg").write_text(button_svg(f"Roll for {info['name']}", info["accessory"]), encoding="utf-8")
@@ -316,7 +324,7 @@ def render_readme(state, repo):
 <h3 align="center"><img src="game/duck.svg" height="30" alt="🦆"> Duck race · round {state['round']}</h3>
 
 <p align="center">
-  <img src="game/board.svg?r={state['total_rolls']}" alt="duck race board" width="100%">
+  <img src="game/{board_name(state)}" alt="duck race board" width="100%">
 </p>
 
 <p align="center">{buttons}</p>
