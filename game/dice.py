@@ -217,7 +217,7 @@ def roll(state, team, user, repo=DEFAULT_REPO):
         if gap:
             where = f"{label(team)} is on square {square}/{TRACK_LENGTH}, {abs(gap)} {'ahead of' if gap > 0 else 'behind'} {label(other)}."
         else:
-            where = f"{label(team)} is on square {square}/{TRACK_LENGTH}, dead even with {label(other)}."
+            where = f"{label(team)} is on square {square}/{TRACK_LENGTH}, tied with {label(other)}."
 
     gained = sum(points for points, _ in earned)
     player["points"] += gained
@@ -247,10 +247,8 @@ def roll(state, team, user, repo=DEFAULT_REPO):
 # ---------- rendering ----------
 
 def render_art(state):
-    lead, trail, gap = standings(state)
-    summary = "dead even" if gap == 0 else f"{TEAMS[lead]['name']} is up by {gap}"
     tiles = {square: (tile["icon"], tile["move"]) for square, tile in TILES.items()}
-    board = board_svg(state["positions"], TEAMS, tiles, TRACK_LENGTH, f"duck race, round {state['round']}: {summary}")
+    board = board_svg(state["positions"], TEAMS, tiles, TRACK_LENGTH, "duck race board")
     (GAME / "board.svg").write_text(board, encoding="utf-8")
     (GAME / "duck.svg").write_text(duck_front_svg(), encoding="utf-8")
     for team, info in TEAMS.items():
@@ -293,7 +291,7 @@ def render_leaderboard(state, repo):
 def render_readme(state, repo):
     lead, trail, gap = standings(state)
     if gap == 0:
-        status = "dead even. your roll breaks the tie!"
+        status = "it's a tie. your roll breaks it!"
     else:
         status = f"{duck_img(lead)} is up by {gap}. {duck_img(trail)} needs you!"
 
