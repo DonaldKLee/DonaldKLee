@@ -1,7 +1,7 @@
 {
   "round": 1,
   "positions": {
-    "shades": 0,
+    "shades": 5,
     "tophat": 0
   },
   "wins": {
@@ -9,12 +9,23 @@
     "tophat": 0
   },
   "crew": {
-    "shades": [],
+    "shades": [
+      "DonaldKLee"
+    ],
     "tophat": []
   },
-  "last_roller": null,
-  "last_roll_day": null,
-  "players": {},
-  "recent": [],
-  "total_rolls": 0
+  "last_roller": "DonaldKLee",
+  "last_roll_day": "2026-11-14",
+  "players": {
+    "DonaldKLee": {
+      "points": 2,
+      "rolls": 1,
+      "streak": 1,
+      "last_day": "2026-11-14"
+    }
+  },
+  "recent": [
+    "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades"
+  ],
+  "total_rolls": 1
 }
