@@ -2,7 +2,7 @@
   "round": 2,
   "positions": {
     "shades": 0,
-    "tophat": 0
+    "tophat": 6
   },
   "wins": {
     "shades": 0,
@@ -10,14 +10,16 @@
   },
   "crew": {
     "shades": [],
-    "tophat": []
+    "tophat": [
+      "DonaldKLee"
+    ]
   },
-  "last_roller": "kashgarg",
+  "last_roller": "DonaldKLee",
   "last_roll_day": "2026-11-15",
   "players": {
     "DonaldKLee": {
-      "points": 7,
-      "rolls": 4,
+      "points": 8,
+      "rolls": 5,
       "streak": 2,
       "last_day": "2026-11-15"
     },
@@ -41,12 +43,12 @@
     }
   },
   "recent": [
+    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚅ **6** for 🦸 cape",
     "nov 15 · [@kashgarg](https://github.com/kashgarg) rolled ⚅ **6** for 🦸 cape and crossed the finish 🏁 **cape wins round 1!**",
     "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades",
     "nov 15 · [@KPSekhon](https://github.com/KPSekhon) rolled ⚅ **6** for 🦸 cape",
-    "nov 15 · [@kashgarg](https://github.com/kashgarg) rolled ⚂ **3** for 🦸 cape, plus 1 for catching up 💨",
-    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades, shipped to prod and jumped ahead 3 (+3) 🚀"
+    "nov 15 · [@kashgarg](https://github.com/kashgarg) rolled ⚂ **3** for 🦸 cape, plus 1 for catching up 💨"
   ],
-  "last_roll": "[@kashgarg](https://github.com/kashgarg) rolled ⚅ **6** for 🦸 cape and crossed the finish 🏁 **cape wins round 1!**",
-  "total_rolls": 9
+  "last_roll": "[@DonaldKLee](https://github.com/DonaldKLee) rolled ⚅ **6** for 🦸 cape",
+  "total_rolls": 10
 }
