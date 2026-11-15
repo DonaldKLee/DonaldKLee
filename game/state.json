@@ -1,7 +1,7 @@
 {
   "round": 1,
   "positions": {
-    "shades": 4,
+    "shades": 6,
     "tophat": 6
   },
   "wins": {
@@ -10,14 +10,15 @@
   },
   "crew": {
     "shades": [
-      "DonaldKLee"
+      "DonaldKLee",
+      "JayJaySil"
     ],
     "tophat": [
       "kashgarg"
     ]
   },
-  "last_roller": "DonaldKLee",
-  "last_roll_day": "2026-11-14",
+  "last_roller": "JayJaySil",
+  "last_roll_day": "2026-11-15",
   "players": {
     "DonaldKLee": {
       "points": 3,
@@ -30,12 +31,19 @@
       "rolls": 1,
       "streak": 1,
       "last_day": "2026-11-14"
+    },
+    "JayJaySil": {
+      "points": 2,
+      "rolls": 1,
+      "streak": 1,
+      "last_day": "2026-11-15"
     }
   },
   "recent": [
+    "nov 15 · [@JayJaySil](https://github.com/JayJaySil) rolled ⚁ **2** for 🕶️ shades",
     "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚁ **2** for 🕶️ shades, hit a bug (−3) 🐛",
     "nov 14 · [@kashgarg](https://github.com/kashgarg) rolled ⚃ **4** for 🦸 cape, found some bread (+2) 🍞",
     "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades"
   ],
-  "total_rolls": 3
+  "total_rolls": 4
 }
