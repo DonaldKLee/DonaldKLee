@@ -1,9 +1,9 @@
 # 🏆 duck race leaderboard
 
-3 players, 4 rolls. [back to the pond](https://github.com/DonaldKLee)
+3 players, 5 rolls. [back to the pond](https://github.com/DonaldKLee)
 
 | | player | pts | 🔥 streak | rolls |
 |:-:|:--|:-:|:-:|:-:|
-| 🥇 | <img src="https://wsrv.nl/?url=github.com/DonaldKLee.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@DonaldKLee](https://github.com/DonaldKLee) | **3** | 1 | 2 |
+| 🥇 | <img src="https://wsrv.nl/?url=github.com/DonaldKLee.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@DonaldKLee](https://github.com/DonaldKLee) | **6** | 2 | 3 |
 | 🥈 | <img src="https://wsrv.nl/?url=github.com/JayJaySil.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@JayJaySil](https://github.com/JayJaySil) | **2** | 1 | 1 |
 | 🥉 | <img src="https://wsrv.nl/?url=github.com/kashgarg.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@kashgarg](https://github.com/kashgarg) | **2** | 1 | 1 |

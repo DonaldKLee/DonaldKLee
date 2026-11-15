@@ -1,7 +1,7 @@
 {
   "round": 1,
   "positions": {
-    "shades": 6,
+    "shades": 14,
     "tophat": 6
   },
   "wins": {
@@ -17,14 +17,14 @@
       "kashgarg"
     ]
   },
-  "last_roller": "JayJaySil",
+  "last_roller": "DonaldKLee",
   "last_roll_day": "2026-11-15",
   "players": {
     "DonaldKLee": {
-      "points": 3,
-      "rolls": 2,
-      "streak": 1,
-      "last_day": "2026-11-14"
+      "points": 6,
+      "rolls": 3,
+      "streak": 2,
+      "last_day": "2026-11-15"
     },
     "kashgarg": {
       "points": 2,
@@ -40,11 +40,12 @@
     }
   },
   "recent": [
+    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades, shipped to prod and jumped ahead 3 (+3) 🚀",
     "nov 15 · [@JayJaySil](https://github.com/JayJaySil) rolled ⚁ **2** for 🕶️ shades",
     "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚁ **2** for 🕶️ shades, hit a bug (−3) 🐛",
     "nov 14 · [@kashgarg](https://github.com/kashgarg) rolled ⚃ **4** for 🦸 cape, found some bread (+2) 🍞",
     "nov 14 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades"
   ],
-  "last_roll": "[@JayJaySil](https://github.com/JayJaySil) rolled ⚁ **2** for 🕶️ shades",
-  "total_rolls": 4
+  "last_roll": "[@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades, shipped to prod and jumped ahead 3 (+3) 🚀",
+  "total_rolls": 5
 }
