@@ -167,6 +167,21 @@ class FilesTest(unittest.TestCase):
             self.assertNotIn("https://", svg)
         self.assertEqual(json.loads(dice.STATE_PATH.read_text())["total_rolls"], 1)
 
+    def test_avatars_are_round_github_photos(self):
+        self.run_issue("dice|roll|shades", "ann")
+        readme = (self.root / "README.md").read_text(encoding="utf-8")
+        self.assertIn("wsrv.nl/?url=github.com/ann.png", readme)
+        self.assertIn("mask=circle", readme)
+
+    def test_readme_shows_what_happened_on_the_last_roll(self):
+        with mock.patch.object(dice.secrets, "randbelow", lambda n: 2):  # die = 3, lands on bread? 0+3=3, no tile
+            self.run_issue("dice|roll|shades", "ann")
+        state = json.loads(dice.STATE_PATH.read_text())
+        self.assertIn("rolled", state["last_roll"])
+        readme = (self.root / "README.md").read_text(encoding="utf-8")
+        self.assertIn("last roll: <a href=", readme)
+        self.assertNotIn("**", readme.split("last roll:")[1].split("</p>")[0])
+
     def test_everyone_is_on_the_full_leaderboard(self):
         state = dice.fresh_state()
         state["players"] = {f"user{i:02d}": {**dice.new_player(), "points": 50 - i, "rolls": 1} for i in range(14)}
