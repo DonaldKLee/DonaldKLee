@@ -107,6 +107,7 @@ def fresh_state():
         "last_roll_day": None,
         "players": {},
         "recent": [],
+        "last_roll": None,  # what happened on the latest roll, shown above the buttons
         "total_rolls": 0,
     }
 
@@ -180,7 +181,8 @@ def roll(state, team, user, repo=DEFAULT_REPO):
     tile = TILES.get(square)
     if tile:
         square = max(0, min(square + tile["move"], TRACK_LENGTH))
-        story += f", {tile['story']} ({signed(tile['move'])}) {tile['emoji']}"
+        moved = f"went back {abs(tile['move'])}" if tile["move"] < 0 else f"jumped ahead {tile['move']}"
+        story += f", {tile['story']} and {moved} ({signed(tile['move'])}) {tile['emoji']}"
 
     player = state["players"].setdefault(user, new_player())
     earned = [(POINTS_ROLL, "roll")]
@@ -223,6 +225,7 @@ def roll(state, team, user, repo=DEFAULT_REPO):
     player["points"] += gained
 
     stamp = today().strftime("%b %d").lower()
+    state["last_roll"] = f"{user_link(user)} {story}"
     state["recent"] = ([f"{stamp} · {user_link(user)} {story}"] + state["recent"])[:RECENT_SIZE]
 
     ranked = leaderboard(state)
@@ -277,9 +280,15 @@ def duck_img(team):
     return f'<img src="game/duck-{team}.svg" height="24" alt="{name} duck"> {name}'
 
 
+def avatar_src(user):
+    """A round GitHub avatar. README markdown can't round images, so wsrv.nl
+    applies the circle mask to the GitHub photo. Nothing is saved in the repo."""
+    return f"https://wsrv.nl/?url=github.com/{user}.png&w=40&h=40&fit=cover&mask=circle&output=png"
+
+
 def player_row(place, user, player, extra=""):
     medal = ["🥇", "🥈", "🥉"][place - 1] if place <= 3 else str(place)
-    avatar = f'<img src="https://github.com/{user}.png?size=40" width="20" height="20" alt="">'
+    avatar = f'<img src="{avatar_src(user)}" width="20" height="20" alt="">'
     return f"| {medal} | {avatar} {user_link(user)} | **{player['points']}** | {live_streak(player) or '·'} |{extra}"
 
 
@@ -294,6 +303,12 @@ def render_leaderboard(state, repo):
         f"[back to the pond](https://github.com/{repo.split('/')[0]})\n\n"
         f"{table if rows else 'nobody yet. roll once and you are #1 👀'}\n"
     )
+
+
+def md_inline(text):
+    """Links and bold as HTML, for lines inside an HTML block where markdown isn't parsed."""
+    text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
+    return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
 
 
 def render_readme(state, repo):
@@ -320,6 +335,8 @@ def render_readme(state, repo):
     recent = "\n".join(f"- {line}" for line in state["recent"]) or "- no rolls yet. be the first!"
     wins = ", ".join(f"{TEAMS[team]['name']} {state['wins'][team]}" for team in TEAMS)
 
+    last = f'\n<p align="center"><sub>last roll: {md_inline(state["last_roll"])}</sub></p>\n' if state.get("last_roll") else ""
+
     return f"""{START}
 <h3 align="center"><img src="game/duck.svg" height="30" alt="🦆"> Duck race · round {state['round']}</h3>
 
@@ -330,7 +347,7 @@ def render_readme(state, repo):
 <p align="center">{buttons}</p>
 
 <p align="center"><b>{status}</b></p>
-
+{last}
 pick a duck and roll. you're on its team until the round ends.
 
 **points**

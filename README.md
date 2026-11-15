@@ -22,6 +22,8 @@ I'm a software engineer with a passion for building things that help make lives 
 
 <p align="center"><b>it's a tie. your roll breaks it!</b></p>
 
+<p align="center"><sub>last roll: <a href="https://github.com/JayJaySil">@JayJaySil</a> rolled ⚁ <b>2</b> for 🕶️ shades</sub></p>
+
 pick a duck and roll. you're on its team until the round ends.
 
 **points**
@@ -38,9 +40,9 @@ pick a duck and roll. you're on its team until the round ends.
 
 | | player | pts | 🔥 streak |
 |:-:|:--|:-:|:-:|
-| 🥇 | <img src="https://github.com/DonaldKLee.png?size=40" width="20" height="20" alt=""> [@DonaldKLee](https://github.com/DonaldKLee) | **3** | 1 |
-| 🥈 | <img src="https://github.com/JayJaySil.png?size=40" width="20" height="20" alt=""> [@JayJaySil](https://github.com/JayJaySil) | **2** | 1 |
-| 🥉 | <img src="https://github.com/kashgarg.png?size=40" width="20" height="20" alt=""> [@kashgarg](https://github.com/kashgarg) | **2** | 1 |
+| 🥇 | <img src="https://wsrv.nl/?url=github.com/DonaldKLee.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@DonaldKLee](https://github.com/DonaldKLee) | **3** | 1 |
+| 🥈 | <img src="https://wsrv.nl/?url=github.com/JayJaySil.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@JayJaySil](https://github.com/JayJaySil) | **2** | 1 |
+| 🥉 | <img src="https://wsrv.nl/?url=github.com/kashgarg.png&w=40&h=40&fit=cover&mask=circle&output=png" width="20" height="20" alt=""> [@kashgarg](https://github.com/kashgarg) | **2** | 1 |
 
 <sub>not in the top 10? find yourself on the <a href="game/leaderboard.md">full leaderboard</a> (3 players)</sub>
 
