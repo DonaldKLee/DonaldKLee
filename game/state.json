@@ -2,7 +2,7 @@
   "round": 2,
   "positions": {
     "shades": 0,
-    "tophat": 4
+    "tophat": 8
   },
   "wins": {
     "shades": 0,
@@ -15,12 +15,12 @@
       "KPSekhon"
     ]
   },
-  "last_roller": "KPSekhon",
+  "last_roller": "DonaldKLee",
   "last_roll_day": "2026-11-15",
   "players": {
     "DonaldKLee": {
-      "points": 8,
-      "rolls": 5,
+      "points": 9,
+      "rolls": 6,
       "streak": 2,
       "last_day": "2026-11-15"
     },
@@ -44,12 +44,12 @@
     }
   },
   "recent": [
+    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚃ **4** for 🦸 cape",
     "nov 15 · [@KPSekhon](https://github.com/KPSekhon) rolled ⚀ **1** for 🦸 cape, hit a bug and went back 3 (−3) 🐛",
     "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚅ **6** for 🦸 cape",
     "nov 15 · [@kashgarg](https://github.com/kashgarg) rolled ⚅ **6** for 🦸 cape and crossed the finish 🏁 **cape wins round 1!**",
-    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades",
-    "nov 15 · [@KPSekhon](https://github.com/KPSekhon) rolled ⚅ **6** for 🦸 cape"
+    "nov 15 · [@DonaldKLee](https://github.com/DonaldKLee) rolled ⚄ **5** for 🕶️ shades"
   ],
-  "last_roll": "[@KPSekhon](https://github.com/KPSekhon) rolled ⚀ **1** for 🦸 cape, hit a bug and went back 3 (−3) 🐛",
-  "total_rolls": 11
+  "last_roll": "[@DonaldKLee](https://github.com/DonaldKLee) rolled ⚃ **4** for 🦸 cape",
+  "total_rolls": 12
 }
