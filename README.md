@@ -18,13 +18,13 @@ I'm a software engineer with a passion for building things that help make lives 
   <img src="game/board-14.svg" alt="duck race board" width="100%">
 </p>
 
-<p align="center"><a href="https://github.com/DonaldKLee/DonaldKLee/issues/new?title=dice%7Croll%7Cshades&body=%F0%9F%91%87%20hit%20the%20green%20%2A%2ACreate%2A%2A%20button.%20that%27s%20it%21%20No%20need%20to%20edit%20anything%20here%2C%20close%20any%20issues%2C%20etc%21%0A%0A-%20%F0%9F%8E%B2%20a%20bot%20will%20roll%20for%20your%20duck%20and%20reply%20here%20within%20~30%20seconds%0A-%20%F0%9F%8F%81%20first%20duck%20to%20the%20finish%20wins%20the%20round%0A-%20%F0%9F%A4%9D%20you%27re%20on%20team%20shades%20until%20the%20round%20ends"><img src="game/roll-shades.svg" height="46" alt="🎲 roll for shades"></a>&nbsp;&nbsp;<a href="https://github.com/DonaldKLee/DonaldKLee/issues/new?title=dice%7Croll%7Ctophat&body=%F0%9F%91%87%20hit%20the%20green%20%2A%2ACreate%2A%2A%20button.%20that%27s%20it%21%20No%20need%20to%20edit%20anything%20here%2C%20close%20any%20issues%2C%20etc%21%0A%0A-%20%F0%9F%8E%B2%20a%20bot%20will%20roll%20for%20your%20duck%20and%20reply%20here%20within%20~30%20seconds%0A-%20%F0%9F%8F%81%20first%20duck%20to%20the%20finish%20wins%20the%20round%0A-%20%F0%9F%A4%9D%20you%27re%20on%20team%20cape%20until%20the%20round%20ends"><img src="game/roll-tophat.svg" height="46" alt="🎲 roll for cape"></a></p>
+<p align="center"><a href="https://github.com/DonaldKLee/DonaldKLee/issues/new?title=dice%7Croll%7Cshades&body=%F0%9F%91%87%20hit%20the%20green%20%2A%2ACreate%2A%2A%20button.%20that%27s%20it%21%20No%20need%20to%20edit%20anything%20here%2C%20close%20any%20issues%2C%20etc%21%0A%0A-%20%F0%9F%8E%B2%20a%20bot%20will%20roll%20for%20your%20duck%20and%20reply%20here%20within%20~30%20seconds%0A-%20%F0%9F%8F%81%20first%20duck%20to%20the%20finish%20wins%20the%20round%0A-%20%F0%9F%A4%9D%20you%27re%20on%20team%20shades%20until%20the%20round%20ends"><img src="game/roll-shades.svg" height="46" alt="🎲 roll for shades"></a></p>
 
 <p align="center"><b><img src="game/duck-tophat.svg" height="24" alt="cape duck"> cape is up by 10. <img src="game/duck-shades.svg" height="24" alt="shades duck"> shades needs you!</b></p>
 
 <p align="center"><sub>last roll: <a href="https://github.com/DonaldKLee">@DonaldKLee</a> rolled ⚀ <b>1</b> for 🦸 cape</sub></p>
 
-pick a duck and roll. you're on its team until the round ends.
+both ducks can roll first. after that, take turns rolling for the other duck. you're on its team until the round ends.
 
 **points**
 

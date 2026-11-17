@@ -103,6 +103,7 @@ def fresh_state():
         "positions": {team: 0 for team in TEAMS},
         "wins": {team: 0 for team in TEAMS},
         "crew": {team: [] for team in TEAMS},  # who rolled for each duck this round
+        "last_team": None,  # next roll must be for the other duck
         "last_roller": None,
         "last_roll_day": None,
         "players": {},
@@ -117,6 +118,12 @@ def load_state():
         return fresh_state()
     saved = json.loads(STATE_PATH.read_text(encoding="utf-8"))
     state = {**fresh_state(), **saved}
+    # Older saves did not track the turn. Recover it from the latest roll when possible.
+    if "last_team" not in saved:
+        latest = saved.get("last_roll") or (saved.get("recent") or [""])[0]
+        state["last_team"] = next(
+            (team for team in TEAMS if f"for {label(team)}" in latest), None
+        )
     # The first version only counted rolls per user; carry those over as points.
     if "rollers" in saved and "players" not in saved:
         state["players"] = {
@@ -165,6 +172,12 @@ def roll(state, team, user, repo=DEFAULT_REPO):
             f"hey @{user}, you're on team {label(picked)} this round, so no rolling for the other duck. 🦆\n\n"
             f"[roll for {TEAMS[picked]['name']}]({roll_link(picked, repo)}) instead. you can switch sides next round."
         )
+    if state["last_team"] is not None and team == state["last_team"]:
+        next_team = next(t for t in TEAMS if t != state["last_team"])
+        return False, (
+            f"it's {TEAMS[next_team]['name']}'s turn now. 🦆\n\n"
+            f"[roll for {TEAMS[next_team]['name']}]({roll_link(next_team, repo)}) instead."
+        )
     if state["last_roller"] == user and state["last_roll_day"] == day:
         return False, (
             f"hey @{user}, you just rolled! 🎲 give someone else a turn, or come back tomorrow.\n\n"
@@ -198,6 +211,7 @@ def roll(state, team, user, repo=DEFAULT_REPO):
 
     state["positions"][team] = square
     state["last_roller"] = user
+    state["last_team"] = team
     state["last_roll_day"] = day
     state["total_rolls"] += 1
     player["rolls"] += 1
@@ -214,6 +228,7 @@ def roll(state, team, user, repo=DEFAULT_REPO):
         state["round"] += 1
         state["positions"] = {t: 0 for t in TEAMS}
         state["crew"] = {t: [] for t in TEAMS}
+        state["last_team"] = None
     else:
         gap = square - state["positions"][other]
         if gap:
@@ -318,9 +333,12 @@ def render_readme(state, repo):
     else:
         status = f"{duck_img(lead)} is up by {gap}. {duck_img(trail)} needs you!"
 
+    available_teams = TEAMS if state.get("last_team") is None else (
+        next(t for t in TEAMS if t != state["last_team"]),
+    )
     buttons = "&nbsp;&nbsp;".join(
         f'<a href="{roll_link(team, repo)}"><img src="game/roll-{team}.svg" height="46" alt="🎲 roll for {TEAMS[team]["name"]}"></a>'
-        for team in TEAMS
+        for team in available_teams
     )
     squares = " · ".join(f"{t['emoji']} {t['name']} {signed(t['move'])}" for _, t in sorted(TILES.items()))
 
@@ -348,7 +366,7 @@ def render_readme(state, repo):
 
 <p align="center"><b>{status}</b></p>
 {last}
-pick a duck and roll. you're on its team until the round ends.
+both ducks can roll first. after that, take turns rolling for the other duck. you're on its team until the round ends.
 
 **points**
 
